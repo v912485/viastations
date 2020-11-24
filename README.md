@@ -28,15 +28,17 @@ Same as  `stations_via.json` plus some extra data fetched for each station by pa
 
 
     {
-        "pv": "BC", 
-        "name": "Abbotsford train station", 
-        "url": "http://www.viarail.ca/en/embedded/station/detail/ABBO", 
-        "long": "-122.279", 
-        "lat": "49.1183", 
-        "sn": "ABBOTSFORD", 
-        "dEn": "ABBOTSFORD", 
-        "address": "Hargitt Street, Abbotsford, BC, V3G 1M8, Canada", 
-        "sc": "ABBO"
+        "sc": "ABBO",
+        "sn": "ABBOTSFORD",
+        "pv": "BC",
+        "dEn": "ABBOTSFORD",
+        "name": "Abbotsford train station",
+        "address": "Hargitt Street, Abbotsford, BC, V3G 1M8, Canada",
+        "city": "Abbotsford",
+        "lat": "49.116845",
+        "long": "-122.277756",
+        "url": "http://www.viarail.ca/en/embedded/station/detail/ABBO",
+        "timezone": "America/Vancouver"
     }
    
 Where:
@@ -56,6 +58,10 @@ Notes:
 ## Re-generating
 
     pip install -r requirements
+
+To add support for timezones run:
+
+    pip install git+https://github.com/pegler/pytzwhere.git
 
 Then:    
 
